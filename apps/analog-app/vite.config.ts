@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => {
     plugins: [
       analog({
         apiPrefix: 'api',
-        additionalPagesDirs: ['/libs/shared/feature'],
+        additionalPagesDirs: ['/libs/shared/feature', '/libs/test/feature'],
         additionalAPIDirs: ['/libs/shared/feature/src/api'],
         prerender: {
           routes: ['/', '/cart'],

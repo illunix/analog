@@ -5,7 +5,11 @@ import {
 } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
 import { provideClientHydration } from '@angular/platform-browser';
-import { provideFileRouter, requestContextInterceptor } from '@analogjs/router';
+import {
+  provideFileRouter,
+  requestContextInterceptor,
+  routes,
+} from '@analogjs/router';
 import { withNavigationErrorHandler } from '@angular/router';
 
 import { cookieInterceptor } from './interceptors/cookies.interceptor';

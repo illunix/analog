@@ -45,6 +45,7 @@
       ],
       "libs/card": ["libs/card/src/index.ts"],
       "shared/feature": ["libs/shared/feature/src/index.ts"],
+      "test": ["libs/test/feature/src/index.ts"],
       "vitest-angular": [
         "./node_modules/@analogjs/vitest-angular",
         "packages/vitest-angular/src/index.ts"
