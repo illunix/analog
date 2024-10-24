@@ -2,11 +2,11 @@
 
 import type { Route } from '@angular/router';
 
+import { ENDPOINT_EXTENSION } from './constants';
+import { ANALOG_META_KEY } from './endpoints';
+import { toMarkdownModule } from './markdown-helpers';
 import type { RouteExport, RouteMeta } from './models';
 import { toRouteConfig } from './route-config';
-import { toMarkdownModule } from './markdown-helpers';
-import { APP_DIR, ENDPOINT_EXTENSION } from './constants';
-import { ANALOG_META_KEY } from './endpoints';
 
 /**
  * This variable reference is replaced with a glob of all page routes.
@@ -138,6 +138,8 @@ function toSegment(rawSegment: string): string {
 
 function toRoutes(rawRoutes: RawRoute[], files: Files): Route[] {
   const routes: Route[] = [];
+
+  console.log(rawRoutes);
 
   for (const rawRoute of rawRoutes) {
     const children: Route[] | undefined =
